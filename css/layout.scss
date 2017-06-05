@@ -95,13 +95,13 @@ footer {
 .nav__list::before, 
 .menu-acco::before, 
 .order__form::before, 
-.order__form-row::before, 
+.form-row::before, 
 .reviews__list::before, 
 .team-acco__content::before, 
 .nav__list::after, 
 .menu-acco::after, 
 .order__form::after, 
-.order__form-row::after, 
+.form-row::after, 
 .reviews__list::after, 
 .team-acco__content::after {
 	content: "";
@@ -111,7 +111,7 @@ footer {
 .nav__list::after, 
 .menu-acco::after, 
 .order__form::after, 
-.order__form-row::after, 
+.form-row::after, 
 .reviews__list::after, 
 .team-acco__content::after {
 	clear: both;
@@ -160,4 +160,12 @@ footer {
     opacity: 0;
     -webkit-transition: .3s;
     transition: .3s;
+}
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
