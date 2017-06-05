@@ -4,14 +4,11 @@
     position: relative;
 }
 
-.order__content {
-	position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
 .order .container {
 	//position: static;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .order .section__title {
